@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <title>Fotograf Lisa Ryd-Carlsson</title>
+    <link href="./main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Bästsäljare</h1>
+    <div class="inputSection">
+      <div class="inputs">
+        <input placeholder="Gravidfotografering"></input>
+      </div>
+      <button class="addOption">Klicka här</button>
+    </div>
+    <div class="resultSection"></div>
+    <button class="Goknapp">Go!</button>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    $(function() {
+      $('.resultSection').hide()
+
+var add_option = function() {
+  $('.inputs').append('<input></input>')
+}
+
+$('.addOption').click(add_option)
+    })
+
+    </script>
+  </body>
+</html>
